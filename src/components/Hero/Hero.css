@@ -64,3 +64,60 @@
     margin-left: 20px;
     margin-bottom: -40px;
 }
+
+.spans {
+    display: flex;
+}
+@media(max-width: 1025px) {
+    .Hero {
+        scale: .8;
+    }
+}
+
+
+@media(max-width: 850px) {
+    .Hero {
+        scale: .6;
+    }
+}
+
+
+@media(max-width: 500px) {
+  
+    .a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .a h3 {
+        font-size: 3em;
+    }
+    .maintext {
+        text-align: center;
+
+    }
+
+    .spans {
+        flex-direction: column;
+    }
+    .first {
+      
+    }
+    .second {
+        margin-top: -15vh;
+    }
+}
+
+@media(max-width: 400px) {
+    .Hero {
+        scale: .55;
+    }
+}
+
+@media(max-width: 350px) {
+    .Hero {
+        scale: .45;
+    }
+}
