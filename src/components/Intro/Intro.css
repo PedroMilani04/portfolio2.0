@@ -1,0 +1,436 @@
+
+.all {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    scale: 0.8;
+}
+
+
+.aboutall {
+    padding: 15vh 0;
+    justify-content: center;
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    width: 70%;
+}
+
+.aboutme {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: url("https://img.freepik.com/fotos-gratis/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-10_1562-745.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    font-size: 2.3rem;
+    color: rgb(80, 79, 79);
+    text-align: center;
+    margin-bottom: 10vh;
+    font-family: 'Montserrat', sans-serif;
+ 
+
+
+}
+
+.summary {
+    font-size: 1.4rem;
+    color: rgb(80, 79, 79);
+    
+    word-break: break-word;
+}
+
+.image {
+    width: 1050px;
+    margin-top: 1vh;
+    margin-right: 0vw;
+    border-radius: 20px;
+    margin-left: 2vw;
+    overflow-y: hidden;
+}
+
+
+
+.svgaward1 {
+    width: 30%;
+    height: 30%;
+    overflow-y: hidden;
+    margin-left: 3.2vw;
+    margin-top: 3px;
+}
+
+.years, .companies, .projects {
+    font-size: .8rem;
+    padding: 1em;
+    padding-bottom: .5em;
+}
+
+
+.image img {
+    width:410px;
+    height: 370px;
+    border-radius: 60% 50% 40% 80% / 60% 39% 70% 45%;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+    
+}
+
+@keyframes profile_animate {
+    0% {
+      border-radius: 60% 50% 40% 80% / 60% 39% 70% 45%;
+    }
+  
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 65%;
+    }
+  
+    100% {
+      border-radius: 60% 50% 40% 80% / 60% 39% 70% 45%;
+    }
+  }
+
+.personalinfo {
+    display: flex;
+    column-gap: 5%;
+}
+
+.personalinfochild {
+    width: 70vw;
+    margin-right: 1vw;
+    
+}
+
+.cards {
+    display: flex;
+    margin-top: 3.5vh;
+    justify-content: space-between;
+    overflow-y: hidden;
+    height: 140px;
+    color: #303030;
+}
+
+.cards div {
+    margin-top: 1vh;
+    width: 9vw;
+    height: 100px;
+    background-color: rgb(220, 221, 221);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.274);
+    margin-bottom: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+    transition: ease-out .2s;
+}
+
+
+
+.number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    overflow-y: hidden;
+}
+
+.goto {
+    
+    margin-top: 3vh;
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+   }
+   
+  
+   
+   .goto span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+   }
+   
+   .goto::before,
+   .goto::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .goto::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .goto:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   
+   .goto:active {
+    transform: scale(0.95);
+   }
+
+   .buttonscv {
+    display: flex;
+    margin-top: 1vh;
+   }
+
+   .cv {
+    margin-right: 1vw;
+    transition: ease-out .3s;
+    
+   }
+
+   
+.cv {
+    width: 95%;
+    height: 80px;
+    margin-top: 3vh;
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+    margin-left: 0;
+    
+   }
+   
+  
+   
+   .cv span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+   }
+   
+   .cv::before,
+   .cv::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .cv::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .cv:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   
+   .cv:active {
+    transform: scale(0.95);
+   }
+  
+   @media(max-width: 1440px) {
+    .buttonscv {
+        margin-top: 2vh;
+        flex-direction: column;
+    }
+
+    .cv {
+        margin-right: 0;
+    }
+
+    .image {
+        margin-right: 3vw;
+    }
+
+    .image img {
+    width: 400px;
+    height: 370px;
+    border-radius: 20px;
+    object-fit: none;
+}
+    
+   }
+
+   @media(max-width: 1024px) {
+    .aboutall {
+        width: 80%;
+    }
+
+    .image {
+        width: 425px;
+        height: 180px;
+        margin-top: 8vh;
+    }
+
+    .image img {
+        width: 425px;
+        height: 180px;
+    }
+
+    .cards div {
+        width: 20vw;
+    }
+
+    .svgaward1 {
+        margin-left: 4.7vw;
+    }
+
+    
+   }
+
+  @media(max-width: 769px) {
+    .cards div {
+        margin-left: 2%;
+        
+    }
+
+    .aboutall {
+        width: 90%;
+    }
+
+    .number {
+        font-size: 1.3rem;
+    }
+
+    .image {
+        margin-right: 5vw;
+    }
+  }
+
+   @media(max-width: 560px) {
+    .personalinfo {
+        flex-direction: column;
+        margin-top: -10vh;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .personalinfochild {
+        margin-top: 3vh;
+        margin-left: 5%;
+        
+    }
+
+    .summary {
+        font-size: 1.2rem;
+        
+    }
+
+    .cards div {
+        margin-left: 2%;
+
+    }
+
+    
+    .image {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .svgaward1 {
+        margin-left: 20vw;
+    }
+    .number {
+        margin-top: -15px;
+    }
+
+    
+   }
+
+   
+   @media(max-width: 426px) {
+    .personalinfochild {
+        margin-left: 6%;
+        width: 70vw;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        transform: translate(10%);
+        height: 320px;
+        
+    }
+
+    .cards div {
+        margin-left: 3%;
+        font-size: .8rem;
+        word-break: break-word;
+        width: 230px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .number {
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .svgaward1 {
+        margin-left: 19vw;
+    }
+    
+   }
+
+   
+   @media(max-width: 376px) {
+    .svgaward1 {
+        margin-left: 22vw;
+    }
+
+    .cards {
+            
+            transform: translate(5%);
+    
+    
+        }
+        
+   }
+
+   @media(max-width: 320px) {
+    .svgaward1 {
+        margin-left: 22vw;
+    }
+
+    .cards {
+            
+            transform: translate(5%);
+    
+    
+        }
+        .cards div {
+            width: 200px;
+        }
+   }
