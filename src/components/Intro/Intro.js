@@ -203,13 +203,13 @@ export default function Intro() {
                         </div>
                         <div className="buttonscv">
                             <a href="https://drive.google.com/file/d/1iu3Gi6gHTdxBt22ZaXtxY1Mf-Nk7c2ni/view?usp=sharing">
-                                <button className="cv">
-                                    <span>Download CV - English</span>
+                                <button className="button">
+                                    <span className="button_top">Download CV - English</span>
                                 </button>
                             </a>
                             <a href="https://drive.google.com/file/d/1iurvMbsVEEdTmlXp8FjtljMfOSyiG81_/view?usp=sharing">
-                                <button className="cv">
-                                    <span>Download CV - Portuguese</span>
+                                <button className="button">
+                                    <span className="button_top">Download CV - Portuguese</span>
                                 </button>
                             </a>
                         </div>
