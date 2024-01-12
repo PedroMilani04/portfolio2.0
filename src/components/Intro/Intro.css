@@ -253,6 +253,9 @@
     scale: 0.95;
   }
    @media(max-width: 1440px) {
+    .top {
+        
+    }
     .buttonscv {
         margin-top: 2vh;
         flex-direction: column;
@@ -263,14 +266,18 @@
     }
 
     .image {
-        margin-right: 3vw;
+        margin-right: 8vw;
+        width: 130vw;
+        margin-left: -15vw;
     }
 
     .image img {
-    width: 400px;
-    height: 370px;
+    width: 40vw;
+    height: 80vh;
     border-radius: 20px;
     object-fit: none;
+    scale: .8;
+
 }
     
    }
@@ -299,7 +306,34 @@
         margin-left: 4.7vw;
     }
 
-    
+    .buttonscv {
+        display: flex;
+        flex-direction: row;
+    }
+    .aboutall {
+        display: flex;
+        flex-direction: column;
+    }
+    .personalinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .image img {
+        height: 80vh;
+        width: 60vw;
+    }
    }
 
   @media(max-width: 769px) {
@@ -308,6 +342,13 @@
         
     }
 
+    .buttonscv {
+        flex-direction: column;
+    }
+    .button {
+        width: 100%;
+        margin-top: 2vh;
+    }
     .aboutall {
         width: 90%;
     }
@@ -347,6 +388,7 @@
     }
 
     
+    
     .image {
         width: 80%;
         margin-left: 5%;
@@ -359,6 +401,26 @@
         margin-top: -15px;
     }
 
+    .buttonscv {
+        margin-top: 5vh;
+    }
+
+    .cards {
+        overflow-x: hidden;
+    }
+
+    .cards div {
+        height: 70px;
+    }
+    .image  {
+        overflow-x: hidden;
+        scale: .8;
+    }
+    .image img {
+        height: 100vh;
+        width: 90vw;
+        overflow-x: hidden;
+    }
     
    }
 
