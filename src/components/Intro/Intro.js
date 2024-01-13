@@ -44,17 +44,12 @@ export default function Intro() {
                             data-aos-duration="1300"
                         >
                             {" "}
-                            I'm a 18 year old brazilian FrontEnd Dev seeking for professional,
-                            technical and work environment development. Always giving my best,
-                            being in constant search for knowledge and personal improvement,
-                            sharing my current knowledge and skills, while acquiring more and
-                            more along the way. Huge interest in technology, physics, history,
-                            programming, finances, books and nature!
+                            Nice to meet you! I am Pedro Henrique, a 19-year-old Full-Stack developer from Brazil. Currently, I am residing in Presidente Prudente - São Paulo, where I am also pursuing my studies. I am currently in my third semester of my Computer Sciences bachelor's degree. I have been coding for over four years now and have gained valuable experience working in two different companies. Now, I am eagerly seeking new opportunities in the field to further enhance my skills and contribute to any team I become a part of. I hope we have the chance to collaborate in the future. For now, stay with some of my projects. Thank you!
                         </div>
                         <div className="cards">
-                            <div className="years" data-aos="flip-left" data-aos-delay="400">
+                            <div className="years" data-aos="flip-left" >
                                 <span className="number" data-aos="flip-left">
-                                    +2
+                                    +4
                                 </span>{" "}
                                 Years of experience
                                 <svg
@@ -82,8 +77,8 @@ export default function Intro() {
                                     </g>
                                 </svg>
                             </div>
-                            <div className="projects" data-aos="flip-left" data-aos-delay="800">
-                                <span className="number">+8</span> Projects made
+                            <div className="projects" data-aos="flip-left" data-aos-delay="600">
+                                <span className="number">+15</span> Projects made
                                 <svg
                                     viewBox="0 0 24 24"
                                     fill="none"
@@ -121,8 +116,8 @@ export default function Intro() {
                                     </g>
                                 </svg>
                             </div>
-                            <div className="companies" data-aos="flip-left" data-aos-delay="1200">
-                                <span className="number">02</span> Companies worked
+                            <div className="companies" data-aos="flip-left" data-aos-delay="1000">
+                                <span className="number">03</span> Semesters in college
                                 <svg
                                     viewBox="0 0 24 24"
                                     fill="none"

@@ -52,6 +52,8 @@
     border-radius: 20px;
     margin-left: 2vw;
     overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 
 
@@ -427,8 +429,8 @@
    
    @media(max-width: 426px) {
     .personalinfochild {
-        margin-left: 6%;
         width: 70vw;
+        margin: 0;
     }
 
     .cards {
@@ -456,6 +458,22 @@
     .svgaward1 {
         margin-left: 19vw;
     }
+
+   
+
+    .aboutall {
+        width: 120vw;
+
+
+    }   
+    .image {
+        height: 110vh;
+        width: 120vw;
+    }
+    .image img {
+        width: 120vw;
+        height: 130vh;    /* Maintain the image's aspect ratio */
+      }
     
    }
 
