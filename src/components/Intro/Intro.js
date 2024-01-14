@@ -44,7 +44,7 @@ export default function Intro() {
                             data-aos-duration="1300"
                         >
                             {" "}
-                            Nice to meet you! I am Pedro Henrique, a 19-year-old Full-Stack developer from Brazil. Currently, I am residing in Presidente Prudente - São Paulo, where I am also pursuing my studies. I am currently in my third semester of my Computer Sciences bachelor's degree. I have been coding for over four years now and have gained valuable experience working in two different companies. Now, I am eagerly seeking new opportunities in the field to further enhance my skills and contribute to any team I become a part of. I hope we have the chance to collaborate in the future. For now, stay with some of my projects. Thank you!
+                            Nice to meet you! I am Pedro Henrique, a 19-year-old Full-Stack developer from Brazil. Currently, I am residing in Presidente Prudente - São Paulo, where I am also pursuing my studies. I am currently in my third semester of my Computer Sciences bachelor's degree. I have been coding for over four years now and have gained valuable experiences working in two different companies. Now, I am seeking new opportunities in the field to further enhance my skills and contribute to any team I may become a part of. I hope we have the chance to collaborate in the future. For now, stay with some of my projects. Thank you!
                         </div>
                         <div className="cards">
                             <div className="years" data-aos="flip-left" >
