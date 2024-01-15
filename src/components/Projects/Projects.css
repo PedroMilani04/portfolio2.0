@@ -1,0 +1,29 @@
+.Projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.button-container {
+    display: flex;
+    column-gap: 2vw;
+}
+
+.button-container button {
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    border: 1px solid black;
+    margin-top: 3vh;
+    
+}
