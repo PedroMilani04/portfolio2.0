@@ -2,9 +2,19 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 35vh;
+}
+
+.projecth1 {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: url("https://img.freepik.com/fotos-gratis/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-10_1562-745.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .button-container {

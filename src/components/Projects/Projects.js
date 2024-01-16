@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 import './Projects.css'
+import { useState, useEffect } from "react";
+
 const projectsData = [
     { id: 1, title: 'Tenzi Game', category: 'ReactJS' },
     { id: 2, title: 'Travel Journal', category: 'ReactJS' },
@@ -24,8 +27,30 @@ const Projects = () => {
 
     const filteredProjects = selectedCategory === 'All' ? projectsData : projectsData.filter((project) => project.category === selectedCategory)
 
+
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        // Add a scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Remove the event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
         <div className='Projects'>
+            <h1 className='projecth1' style={{ backgroundPositionY: `${scrollPosition}px` }}> Projects</h1>
             <div className='button-container'>
                 <button onClick={() => setSelectedCategory('All')}>All</button>
                 <button onClick={() => setSelectedCategory('ReactJS')}>ReactJS</button>
@@ -35,7 +60,7 @@ const Projects = () => {
             </div>
             <div className='project-content'>
                 {filteredProjects.map((project) => (
-                    <div key={project.id} className='project'>
+                    <div key={project.id} className='project'  data-aos="fade-up">
                         <h3>{project.title}</h3>
                         {/* Add other project details */}
                     </div>
