@@ -23,8 +23,10 @@
 }
 
 .button-container button {
-    padding: 2em;
     border-radius: 20px;
+    padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 .project-content {
@@ -37,3 +39,50 @@
     margin-top: 3vh;
     
 }
+
+.button1 {
+    align-items: center;
+    appearance: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #dd3421;
+    box-sizing: border-box;
+    color: #91184a; 
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 56px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 20px;
+  }
+  
+  .button1:focus {
+    outline: none;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(254, 83, 157, 0.4) 0 2px 4px, rgba(199, 21, 92, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+
+  }
+  
+  .button1:hover {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(254, 83, 157, 0.4) 0 2px 4px, rgba(199, 21, 92, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button1:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }

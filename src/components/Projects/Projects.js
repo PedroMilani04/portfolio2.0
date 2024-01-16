@@ -52,11 +52,11 @@ const Projects = () => {
         <div className='Projects'>
             <h1 className='projecth1' style={{ backgroundPositionY: `${scrollPosition}px` }}> Projects</h1>
             <div className='button-container'>
-                <button onClick={() => setSelectedCategory('All')}>All</button>
-                <button onClick={() => setSelectedCategory('ReactJS')}>ReactJS</button>
-                <button onClick={() => setSelectedCategory('NextJS')}>NextJS</button>
-                <button onClick={() => setSelectedCategory('Angular')}>Angular</button>
-                <button onClick={() => setSelectedCategory('DOM')}>DOM</button>
+                <button onClick={() => setSelectedCategory('All')} className="button1" >All</button>
+                <button onClick={() => setSelectedCategory('ReactJS')} className="button1">ReactJS</button>
+                <button onClick={() => setSelectedCategory('NextJS')} className="button1">NextJS</button>
+                <button onClick={() => setSelectedCategory('Angular')} className="button1">Angular</button>
+                <button onClick={() => setSelectedCategory('DOM')} className="button1">DOM</button>
             </div>
             <div className='project-content'>
                 {filteredProjects.map((project) => (
