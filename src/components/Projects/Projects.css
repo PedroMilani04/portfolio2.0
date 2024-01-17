@@ -1,88 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
 .Projects {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 35vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35vh;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .projecth1 {
-    font-size: 6rem;
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background: url("https://img.freepik.com/fotos-gratis/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-10_1562-745.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais");
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: url("https://img.freepik.com/fotos-gratis/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-10_1562-745.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .button-container {
-    display: flex;
-    column-gap: 2vw;
+  display: flex;
+  column-gap: 2vw;
 }
 
 .button-container button {
-    border-radius: 20px;
-    padding: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+  border-radius: 20px;
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .project-content {
-    display: flex;
-    flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.project {
-    border: 1px solid black;
-    margin-top: 3vh;
-    
-}
+
 
 .button1 {
-    align-items: center;
-    appearance: none;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border-width: 2px;
-    border-color: #dd3421;
-    box-sizing: border-box;
-    color: #91184a; 
-    cursor: pointer;
-    display: inline-flex;
-    font-family: "JetBrains Mono", monospace;
-    height: 56px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 24px;
-    padding-right: 24px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow 0.15s, transform 0.15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
-    font-size: 20px;
-  }
-  
-  .button1:focus {
-    outline: none;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(254, 83, 157, 0.4) 0 2px 4px, rgba(199, 21, 92, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  align-items: center;
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #dd3421;
+  box-sizing: border-box;
+  color: #91184a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 56px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 20px;
+}
 
-  }
-  
-  .button1:hover {
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(254, 83, 157, 0.4) 0 2px 4px, rgba(199, 21, 92, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    transform: translateY(-2px);
-  }
-  
-  .button1:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-    transform: translateY(2px);
-  }
+.button1:focus {
+  outline: none;
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(254, 83, 157, 0.4) 0 2px 4px, rgba(199, 21, 92, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+
+}
+
+.button1:hover {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(254, 83, 157, 0.4) 0 2px 4px, rgba(199, 21, 92, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button1:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* ---------------------- */
+
+.project {
+  border: 1px solid rgb(212, 212, 212);
+  margin-top: 3vh;
+  width: 28vw;
+  height: 75vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 1.5em;
+  padding-bottom: 0;
+  scale: .8;
+
+}
+
+.project:hover {
+  transition: ease-in-out .1s;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Your desired box shadow style */
+  cursor: pointer;
+  scale: .85;
+
+}
+
+.project:not(:hover) {
+  transition: ease-in-out 0.1s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.148); /* Your desired box shadow style */
+}
+.projtitle {
+  margin: 0;
+  font-size: 2em;
+
+}
+
+.propjp {
+  margin: 0;
+}
+
+.projimg {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+  margin: 0;
+  margin-top: -8vh;
+  margin-bottom: 5vh;
+}

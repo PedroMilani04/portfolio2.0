@@ -4,23 +4,23 @@ import './Projects.css'
 import { useState, useEffect } from "react";
 
 const projectsData = [
-    { id: 1, title: 'Tenzi Game', category: 'ReactJS' },
-    { id: 2, title: 'Travel Journal', category: 'ReactJS' },
-    { id: 3, title: 'React Calculator', category: 'ReactJS' },
-    { id: 4, title: 'Weather Report', category: 'ReactJS' },
-    { id: 5, title: '1st Portfolio', category: 'ReactJS' },
-    { id: 6, title: 'EJ Landing Page', category: 'ReactJS' },
-    { id: 7, title: 'Full-stack Notes App', category: 'ReactJS' },
-    { id: 8, title: 'Interactive Brazil Map', category: 'ReactJS' },
-    { id: 9, title: 'NextJS Pokédex', category: 'NextJS' },
-    { id: 10, title: 'SQL Login', category: 'NextJS' },
-    { id: 11, title: 'Pokedex', category: 'DOM' },
-    { id: 12, title: 'Gesture Controller Stream', category: 'DOM' },
-    { id: 13, title: 'Shopping Cart', category: 'DOM' },
-    { id: 14, title: 'Pokemon Card CSS Practice', category: 'DOM' },
-    { id: 15, title: '7Wonders', category: 'Angular' },
-
-];
+    { id: 1, title: 'Tenzi Game', category: 'ReactJS', info: 'Lorem ipsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Game', img: 'https://placekitten.com/200/200' },
+    { id: 2, title: 'Travel Journal', category: 'ReactJS', info: 'Lorem ipsum for Tpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gravel Journal', img: 'https://placekitten.com/200/200' },
+    { id: 3, title: 'React Calculator', category: 'ReactJS', info: 'Lorem ipsum forpsum for Tenzi Gpsum for Tenzi G React Calculator', img: 'https://placekitten.com/200/200' },
+    { id: 4, title: 'Weather Report', category: 'ReactJS', info: 'Lorem ipsum for psum for Tenzi Gpsum for Tenzi Gpsum for Tenzi GWeather Report', img: 'https://placekitten.com/200/200' },
+    { id: 5, title: '1st Portfolio', category: 'ReactJS', info: 'Lorem ipsum for 1psum for Tenzi Gpsum for Tenzi Gst Portfolio', img: 'https://placekitten.com/200/200' },
+    { id: 6, title: 'EJ Landing Page', category: 'ReactJS', info: 'Lorem ipsum fopsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gr EJ Landing Page', img: 'https://placekitten.com/200/200' },
+    { id: 7, title: 'Full-stack Notes App', category: 'ReactJS', info: 'Lorem psum for Tenzi Gipsum for Full-stack Notes App', img: 'https://placekitten.com/200/200' },
+    { id: 8, title: 'Interactive Brazil Map', category: 'ReactJS', info: 'Lorem psum for Tenzi Gpsum for Tenzi Gipsum for Interactive Brazil Map', img: 'https://placekitten.com/200/200' },
+    { id: 9, title: 'NextJS Pokédex', category: 'NextJS', info: 'Lorem ipsum fopsum for Tenzi Gpsum for Tenzi Gr NextJS Pokédex', img: 'https://placekitten.com/200/200' },
+    { id: 10, title: 'SQL Login', category: 'NextJS', info: 'Lorem ipsum forpsum for Tenzi G SQL Login', img: 'https://placekitten.com/200/200' },
+    { id: 11, title: 'Pokedex', category: 'DOM', info: 'Lorem ipsum forpsum for Tenzi Gpsum for Tenzi G Pokedex', img: 'https://placekitten.com/200/200' },
+    { id: 12, title: 'Gesture Controller Stream', category: 'DOM', info: 'Lorem ipsum for Gesture Controller Stream', img: 'https://placekitten.com/200/200' },
+    { id: 13, title: 'Shopping Cart', category: 'DOM', info: 'Lorem ipsum for psum for Tenzi Gpsum for Tenzi GShopping Cart', img: 'https://placekitten.com/200/200' },
+    { id: 14, title: 'Pokemon Card CSS Practice', category: 'DOM', info: 'Lorem psum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gipsum for Pokemon Card CSS Practice', img: 'https://placekitten.com/200/200' },
+    { id: 15, title: '7Wonders', category: 'Angular', info: 'Lorem ipsum for 7Wpsum for Tenzi Gonders', img: 'https://placekitten.com/200/200' },
+  ];
+  
 
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
@@ -60,9 +60,11 @@ const Projects = () => {
             </div>
             <div className='project-content'>
                 {filteredProjects.map((project) => (
-                    <div key={project.id} className='project'  data-aos="fade-up">
-                        <h3>{project.title}</h3>
-                        {/* Add other project details */}
+                    <div key={project.id} className='project'  data-aos="fade-up" data-aos-delay="160">
+                                                <img className="projimg" src={project.img} />
+
+                        <h3 className="projtitle">{project.title}</h3>
+                        <p className="projp">{project.info}</p>
                     </div>
                 ))}
             </div>
