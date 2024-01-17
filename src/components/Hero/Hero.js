@@ -27,7 +27,7 @@ function Hero() {
     return (
         <div className="Hero">
             <div className='a'>
-                <h3 data-aos="fade-left" data-aos-duration="1000" className='aga3'>Hello there! My name is</h3>
+                <h3 data-aos="fade-left" data-aos-duration="1000" className='aga3'>Hi there! I'm</h3>
                
                 <div className='maintext' style={{ backgroundPositionY: `${scrollPosition}px` }}>
                     <div className='spans'>

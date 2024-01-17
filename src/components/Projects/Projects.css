@@ -13,13 +13,11 @@
 
 .projecth1 {
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  background: url("https://img.freepik.com/fotos-gratis/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-10_1562-745.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais");
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(49, 49, 49);
+
 }
 
 .button-container {
@@ -92,6 +90,7 @@
 
 .project {
   border: 1px solid rgb(212, 212, 212);
+  background-color: #f8f8f8;
   margin-top: 3vh;
   width: 28vw;
   height: 75vh;
@@ -104,14 +103,15 @@
   padding-bottom: 0;
   scale: .8;
 
+
 }
 
 .project:hover {
   transition: ease-in-out .1s;
 
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Your desired box shadow style */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.416); /* Your desired box shadow style */
   cursor: pointer;
-  scale: .85;
+  scale: .81;
 
 }
 

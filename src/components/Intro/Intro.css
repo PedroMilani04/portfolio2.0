@@ -3,7 +3,7 @@
     margin-top: 15vh;
     display: flex;
     justify-content: center;
-    scale: 0.8;
+    scale: .85;
 }
 
 
@@ -18,13 +18,11 @@
 
 .aboutme {
     font-size: 6rem;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    background: url("https://img.freepik.com/fotos-gratis/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-10_1562-745.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais");
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(49, 49, 49);
+
 }
 
 .intro {
@@ -33,6 +31,7 @@
     text-align: center;
     margin-bottom: 10vh;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 3 00;
  
 
 
@@ -41,7 +40,6 @@
 .summary {
     font-size: 1.4rem;
     color: rgb(80, 79, 79);
-    
     word-break: break-word;
 }
 
@@ -70,6 +68,7 @@
     font-size: .8rem;
     padding: 1em;
     padding-bottom: .5em;
+    scale: .92;
 }
 
 
