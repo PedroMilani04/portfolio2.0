@@ -24,7 +24,7 @@
 
 .maintext {
     text-align: left;
-    font-size: 18em;
+    font-size: 19em;
     background: url("bb.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        scale: .9;
     }
 
     .a h3 {

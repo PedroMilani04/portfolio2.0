@@ -41,6 +41,7 @@
     font-size: 1.4rem;
     color: rgb(80, 79, 79);
     word-break: break-word;
+    letter-spacing: 1px;
 }
 
 .image {
@@ -384,9 +385,10 @@
 
     .cards div {
         margin-left: 2%;
-
+        margin: 0;
     }
 
+   
     
     
     .image {
@@ -420,6 +422,10 @@
         height: 100vh;
         width: 90vw;
         overflow-x: hidden;
+    }
+    
+    .top {
+        scale: .8;
     }
     
    }
