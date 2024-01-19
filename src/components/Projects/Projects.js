@@ -20,23 +20,23 @@ import img15 from "./imgs/portfolio15.png"
 
 
 const projectsData = [
-    { id: 1, title: 'Tenzi Game', category: 'ReactJS', info: 'Lorem ipsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Game', img: img3 },
-    { id: 2, title: 'Travel Journal', category: 'ReactJS', info: 'Lorem ipsum for Tpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gravel Journal', img: img9 },
-    { id: 3, title: 'React Calculator', category: 'ReactJS', info: 'Lorem ipsum forpsum for Tenzi Gpsum for Tenzi G React Calculator', img: img4 },
-    { id: 4, title: 'Weather Report', category: 'ReactJS', info: 'Lorem ipsum for psum for Tenzi Gpsum for Tenzi Gpsum for Tenzi GWeather Report', img: img5 },
-    { id: 5, title: '1st Portfolio', category: 'ReactJS', info: 'Lorem ipsum for 1psum for Tenzi Gpsum for Tenzi Gst Portfolio', img: img10 },
-    { id: 6, title: 'EJ Landing Page', category: 'ReactJS', info: 'Lorem ipsum fopsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gr EJ Landing Page', img: img11 },
-    { id: 7, title: 'Full-stack Notes App', category: 'ReactJS', info: 'Lorem psum for Tenzi Gipsum for Full-stack Notes App', img: img7 },
-    { id: 8, title: 'Interactive Brazil Map', category: 'ReactJS', info: 'Lorem psum for Tenzi Gpsum for Tenzi Gipsum for Interactive Brazil Map', img: img8 },
-    { id: 9, title: 'NextJS Pokédex', category: 'NextJS', info: 'Lorem ipsum fopsum for Tenzi Gpsum for Tenzi Gr NextJS Pokédex', img: img12 },
-    { id: 10, title: 'SQL Login', category: 'NextJS', info: 'Lorem ipsum forpsum for Tenzi G SQL Login', img: img15 },
-    { id: 11, title: 'Pokedex', category: 'DOM', info: 'Lorem ipsum forpsum for Tenzi Gpsum for Tenzi G Pokedex', img: img2 },
-    { id: 12, title: 'Gesture Controller Stream', category: 'DOM', info: 'Lorem ipsum for Gesture Controller Stream', img: img1 },
-    { id: 13, title: 'Shopping Cart', category: 'DOM', info: 'Lorem ipsum for psum for Tenzi Gpsum for Tenzi GShopping Cart', img: img6 },
-    { id: 14, title: 'Pokemon Card CSS Practice', category: 'DOM', info: 'Lorem psum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gipsum for Pokemon Card CSS Practice', img: img13 },
-    { id: 15, title: '7Wonders', category: 'Angular', info: 'Lorem ipsum for 7Wpsum for Tenzi Gonders', img: img14 },
-  ];
-  
+    { id: 8, title: 'Interactive Brazil Map', category: 'ReactJS', info: 'Lorem psum for Tenzi Gpsum for Tenzi Gipsum for Interactive Brazil Map', img: img8, url: 'https://brazil-map.vercel.app/' },
+    { id: 4, title: 'Weather Report', category: 'ReactJS', info: 'Lorem ipsum for psum for Tenzi Gpsum for Tenzi Gpsum for Tenzi GWeather Report', img: img5, url: 'https://react-weather-report.vercel.app/' },
+    { id: 7, title: 'Full-stack Notes App', category: 'ReactJS', info: 'Lorem psum for Tenzi Gipsum for Full-stack Notes App', img: img7, url: 'http://notes-frontend-pedro.s3-website-us-east-1.amazonaws.com/' },
+    { id: 5, title: '1st Portfolio', category: 'ReactJS', info: 'Lorem ipsum for 1psum for Tenzi Gpsum for Tenzi Gst Portfolio', img: img10, url: 'https://pedro-portfolio-cyan.vercel.app' },
+    { id: 3, title: 'React Calculator', category: 'ReactJS', info: 'Lorem ipsum forpsum for Tenzi Gpsum for Tenzi G React Calculator', img: img4, url: 'https://react-calculator-kappa-ten.vercel.app' },
+    { id: 6, title: 'EJ Landing Page', category: 'ReactJS', info: 'Lorem ipsum fopsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gr EJ Landing Page', img: img11, url: 'https://ej-landingpage.vercel.app' },
+    { id: 1, title: 'Tenzi Game', category: 'ReactJS', info: 'Lorem ipsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Game', img: img3, url: 'http://tenzi-game-project.vercel.app/' },
+    { id: 2, title: 'Travel Journal', category: 'ReactJS', info: 'Lorem ipsum for Tpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gravel Journal', img: img9, url: 'http://traveljournal-eta.vercel.app/' },
+    { id: 15, title: '7Wonders', category: 'Angular', info: 'Lorem ipsum for 7Wpsum for Tenzi Gonders', img: img14, url: 'https://7wonders-beige.vercel.app/' },
+    { id: 9, title: 'NextJS Pokédex', category: 'NextJS', info: 'Lorem ipsum fopsum for Tenzi Gpsum for Tenzi Gr NextJS Pokédex', img: img12, url: 'https://pokedex-next-six-rho.vercel.app/' },
+    { id: 10, title: 'SQL Login', category: 'NextJS', info: 'Lorem ipsum forpsum for Tenzi G SQL Login', img: img15, url: 'https://next-login-front.vercel.app/' },
+    { id: 11, title: 'Pokedex', category: 'DOM', info: 'Lorem ipsum forpsum for Tenzi Gpsum for Tenzi G Pokedex', img: img2, url: 'http://pokedex-ph.vercel.app/' },
+    { id: 12, title: 'Gesture Controller Stream', category: 'DOM', info: 'Lorem ipsum for Gesture Controller Stream', img: img1, url: 'https://pedromilani04.github.io/hands-detection-stream/' },
+    { id: 13, title: 'Shopping Cart', category: 'DOM', info: 'Lorem ipsum for psum for Tenzi Gpsum for Tenzi GShopping Cart', img: img6, url: 'https://pedromilani04.github.io/e-commerce-cart/' },
+    { id: 14, title: 'Pokemon Card CSS Practice', category: 'DOM', info: 'Lorem psum for Tenzi Gpsum for Tenzi Gpsum for Tenzi Gipsum for Pokemon Card CSS Practice', img: img13, url: 'https://poke-card1.vercel.app/' },
+];
+
 
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
@@ -68,26 +68,28 @@ const Projects = () => {
         <div className='Projects'>
             <h1 className='projecth1' style={{ backgroundPositionY: `${scrollPosition}px` }} data-aos="fade-down" > Projects</h1>
             <div className='button-container'> {/* botao bugfando a responsividade no cel */}
-               <div className="buttonstop">
-               <button onClick={() => setSelectedCategory('All')} className="button1" data-aos="zoom-in" >All</button>
-                <button onClick={() => setSelectedCategory('ReactJS')} className="button1" data-aos="zoom-in">ReactJS</button>
-               </div>
-               <div className="buttonsbottom">
-               <button onClick={() => setSelectedCategory('NextJS')} className="button1" data-aos="zoom-in">NextJS</button>
-                <button onClick={() => setSelectedCategory('Angular')} className="button1" data-aos="zoom-in">Angular</button>
-                <button onClick={() => setSelectedCategory('DOM')} className="button1" data-aos="zoom-in">DOM</button>
-               </div>
+                <div className="buttonstop">
+                    <button onClick={() => setSelectedCategory('All')} className="button1" data-aos="zoom-in" >All</button>
+                    <button onClick={() => setSelectedCategory('ReactJS')} className="button1" data-aos="zoom-in">ReactJS</button>
+                </div>
+                <div className="buttonsbottom">
+                    <button onClick={() => setSelectedCategory('NextJS')} className="button1" data-aos="zoom-in">NextJS</button>
+                    <button onClick={() => setSelectedCategory('Angular')} className="button1" data-aos="zoom-in">Angular</button>
+                    <button onClick={() => setSelectedCategory('DOM')} className="button1" data-aos="zoom-in">DOM</button>
+                </div>
             </div>
             <div className='project-content'>
                 {filteredProjects.map((project) => (
-                    <div key={project.id} className='project' >
-                                                <img className="projimg" src={project.img} />
+                    <a href={project.url}>
+                        <div key={project.id} className='project' >
+                            <img className="projimg" src={project.img} />
 
-                     <div className="text">
-                     <h3 className="projtitle">{project.title}</h3>
-                        <p className="projp">{project.info}</p>
-                    </div>
-                    </div>
+                            <div className="text">
+                                <h3 className="projtitle">{project.title}</h3>
+                                <p className="projp">{project.info}</p>
+                            </div>
+                        </div>
+                    </a>
                 ))}
             </div>
         </div>

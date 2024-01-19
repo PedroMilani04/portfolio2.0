@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+a {
+  text-decoration: none;
+  color: black;
+  transition: trasform 1s ease; /* Add a smooth color transition */
+}
+
+/* a:focus {
+  transform: scale(.97);
+}
+ */
+
 
 .Projects {
   height: 100vh;
@@ -119,6 +130,7 @@
 
 
 }
+
 
 .project:hover {
 
