@@ -61,8 +61,8 @@
     width: 30%;
     height: 30%;
     overflow-y: hidden;
-    margin-left: 3.2vw;
-    margin-top: 3px;
+    margin-left: 4.5vw;
+    margin-top: 6px;
 }
 
 .years, .companies, .projects {
@@ -101,9 +101,13 @@
 }
 
 .personalinfochild {
-    width: 70vw;
-    margin-right: 1vw;
+    width:100vw;
+    margin-right: -5vw;
     
+}
+
+.image {
+    margin-left: -5vw;
 }
 
 .cards {
@@ -117,7 +121,7 @@
 
 .cards div {
     margin-top: 1vh;
-    width: 9vw;
+    width: 33%;
     height: 100px;
     background-color: rgb(220, 221, 221);
     border-radius: 10px;
@@ -255,6 +259,17 @@
     scale: 0.95;
   }
    @media(max-width: 1440px) {
+
+    .svgaward1 {
+        margin-left: 3.2vw;
+    }
+
+    .personalinfochild {
+        width: 70vw;
+        margin-right: 1vw;
+        
+    }
+
     .top {
         
     }
@@ -304,7 +319,7 @@
     }
 
     .svgaward1 {
-        margin-left: 4.7vw;
+        margin-left: 7.2vw;
     }
 
     .buttonscv {
