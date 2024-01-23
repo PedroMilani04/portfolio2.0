@@ -3,7 +3,7 @@
     margin-top: 15vh;
     display: flex;
     justify-content: center;
-    scale: .85;
+    scale: .73;
 }
 
 
@@ -282,23 +282,29 @@
     }
 
     .image {
-        margin-right: 8vw;
+        margin-right: -20vw;
         width: 130vw;
-        margin-left: -15vw;
+        margin-left: -5vw;
     }
-
+   
     .image img {
     width: 40vw;
     height: 80vh;
     border-radius: 20px;
     object-fit: none;
-    scale: .8;
+    scale: .6;
 
 }
     
    }
 
    @media(max-width: 1024px) {
+    .image {
+        margin-right: 8vw;
+        width: 130vw;
+        margin-left: -15vw;
+    }
+
     .aboutall {
         width: 80%;
     }
@@ -310,7 +316,7 @@
     }
 
     .image img {
-        width: 425px;
+        width: 25px;
         height: 180px;
     }
 

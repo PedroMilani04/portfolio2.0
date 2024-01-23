@@ -51,7 +51,7 @@ export default function Intro() {
                         </div>
                         <div className="cards">
                             <div className="years" data-aos="flip-left" >
-                                <span className="number" data-aos="flip-left">
+                                <span className="number">
                                     +4
                                 </span>{" "}
                                 Years of experience
