@@ -37,63 +37,91 @@ const projectsData = [
     { id: 14, title: 'Pokemon Card CSS Practice', category: 'DOM', info: 'A really simple application inspired by Pokemon Company official website, trying to replicate the same effect seem there with my own knowledge of JavaScript for positioning and CSS.', img: img13, url: 'https://poke-card1.vercel.app/' },
 ];
 
-
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
-
-    const filteredProjects = selectedCategory === 'All' ? projectsData : projectsData.filter((project) => project.category === selectedCategory)
-
-
-
+    const [clickedProject, setClickedProject] = useState(null);
+  
+    const filteredProjects =
+      selectedCategory === 'All'
+        ? projectsData
+        : projectsData.filter((project) => project.category === selectedCategory);
+  
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+      Aos.init({ duration: 1000 });
     }, []);
+  
     const [scrollPosition, setScrollPosition] = useState(0);
+  
     useEffect(() => {
-        const handleScroll = () => {
-            setScrollPosition(window.scrollY);
-        };
-
-        // Add a scroll event listener
-        window.addEventListener('scroll', handleScroll);
-
-        // Remove the event listener on component unmount
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+      const handleScroll = () => {
+        setScrollPosition(window.scrollY);
+      };
+  
+      // Add a scroll event listener
+      window.addEventListener('scroll', handleScroll);
+  
+      // Remove the event listener on component unmount
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
     }, []);
-
-
+  
+    const handleClick = (projectId) => {
+      // Set the clicked project id
+      setClickedProject(projectId);
+    };
+  
     return (
-        <div className='Projects'>
-            <h1 className='projecth1' style={{ backgroundPositionY: `${scrollPosition}px` }} data-aos="fade-down" > Projects</h1>
-            <div className='button-container'> {/* botao bugfando a responsividade no cel */}
-                <div className="buttonstop">
-                    <button onClick={() => setSelectedCategory('All')} className="button1" data-aos="zoom-in" >All</button>
-                    <button onClick={() => setSelectedCategory('ReactJS')} className="button1" data-aos="zoom-in">ReactJS</button>
-                </div>
-                <div className="buttonsbottom">
-                    <button onClick={() => setSelectedCategory('NextJS')} className="button1" data-aos="zoom-in">NextJS</button>
-                    <button onClick={() => setSelectedCategory('Angular')} className="button1" data-aos="zoom-in">Angular</button>
-                    <button onClick={() => setSelectedCategory('DOM')} className="button1" data-aos="zoom-in">DOM</button>
-                </div>
-            </div>
-            <div className='project-content'>
-                {filteredProjects.map((project) => (
-                    <a href={project.url}>
-                        <div key={project.id} className='project' >
-                            <img className="projimg" src={project.img} />
-
-                            <div className="text">
-                                <h3 className="projtitle">{project.title}</h3>
-                                <p className="projp">{project.info}</p>
-                            </div>
-                        </div>
-                    </a>
-                ))}
-            </div>
+      <div className='Projects'>
+        <h1
+          className='projecth1'
+          style={{ backgroundPositionY: `${scrollPosition}px` }}
+          data-aos='fade-down'
+        >
+          {' '}
+          Projects
+        </h1>
+        <div className='button-container'>
+          <div className='buttonstop'>
+            <button onClick={() => setSelectedCategory('All')} className='button1'>
+              All
+            </button>
+            <button onClick={() => setSelectedCategory('ReactJS')} className='button1'>
+              ReactJS
+            </button>
+          </div>
+          <div className='buttonsbottom'>
+            <button onClick={() => setSelectedCategory('NextJS')} className='button1'>
+              NextJS
+            </button>
+            <button onClick={() => setSelectedCategory('Angular')} className='button1'>
+              Angular
+            </button>
+            <button onClick={() => setSelectedCategory('DOM')} className='button1'>
+              DOM
+            </button>
+          </div>
         </div>
+        <div className='project-content'>
+          {filteredProjects.map((project) => (
+            <a href={project.url} key={project.id}>
+              <div
+                className={`project`}
+                data-aos='fade-up'
+                onMouseDown={() => handleClick(project.id)}
+              >
+                <img className='projimg' src={project.img} />
+  
+                <div className='text'>
+                  <h3 className='projtitle'>{project.title}</h3>
+                  <p className='projp'>{project.info}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
     );
-};
-
-export default Projects;
+  };
+  
+  export default Projects;
