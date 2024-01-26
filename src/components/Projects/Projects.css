@@ -13,7 +13,7 @@ a {
 
 
 .Projects {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,7 +125,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  padding: 1.5em;
+  padding: 1.8em;
   padding-bottom: 0;
   scale: .8;
   transition: transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;

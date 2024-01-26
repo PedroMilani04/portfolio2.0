@@ -15,6 +15,9 @@ function Navbar() {
     scroll.scrollToTop();
   };
 
+  const scrollToBottom = () => {
+    scroll.scrollToBottom();
+  };
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
@@ -36,6 +39,12 @@ function Navbar() {
         <li className="navbar-item">
           <Link to="projects" smooth={true} duration={800} offset={600}>
             Services
+          </Link>
+         
+        </li>
+        <li className='navbar-item'>
+        <Link onClick={scrollToBottom} smooth={true} duration={800} offset={600}>
+            Contact
           </Link>
         </li>
       </ul>
